@@ -1,0 +1,454 @@
+2021-05-28 15:49:49,675 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-28 15:50:13,537 ERROR Exception on /clients [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'show_all_clients' did not return a valid response. The function either returned None or ended without a return statement.
+2021-05-28 15:50:13,537 INFO 127.0.0.1 - - [28/May/2021 15:50:13] "[35m[1mGET /clients HTTP/1.1[0m" 500 -
+2021-05-28 15:51:43,067 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-28 15:51:50,281 INFO 127.0.0.1 - - [28/May/2021 15:51:50] "[33mGET / HTTP/1.1[0m" 404 -
+2021-05-28 15:51:54,668 ERROR Exception on /clients [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1698, in make_response
+    raise TypeError(
+TypeError: The view function for 'show_all_clients' did not return a valid response. The function either returned None or ended without a return statement.
+2021-05-28 15:51:54,668 INFO 127.0.0.1 - - [28/May/2021 15:51:54] "[35m[1mGET /clients HTTP/1.1[0m" 500 -
+2021-05-28 15:52:30,467 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-28 15:52:34,732 INFO 127.0.0.1 - - [28/May/2021 15:52:34] "GET /clients HTTP/1.1" 200 -
+2021-05-30 12:58:02,708 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:00:08,516 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:07:52,698 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 25, in create_client
+    client = Client(body["clientId"], body["clientName"])
+KeyError: 'clientId'
+2021-05-30 13:07:52,725 INFO 127.0.0.1 - - [30/May/2021 13:07:52] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:09:37,938 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 12, in create_client
+    cursor.execute(sql, (client.client_name))
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:09:37,940 INFO 127.0.0.1 - - [30/May/2021 13:09:37] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:11:43,119 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:11:48,648 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, (client_name))
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:11:48,652 INFO 127.0.0.1 - - [30/May/2021 13:11:48] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:13:15,380 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:13:22,361 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, client_name)
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:13:22,364 INFO 127.0.0.1 - - [30/May/2021 13:13:22] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:15:13,637 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:15:16,114 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "%"
+LINE 1: insert into client (client_name) values (%s) returning clien...
+                                                 ^
+
+2021-05-30 13:15:16,118 INFO 127.0.0.1 - - [30/May/2021 13:15:16] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:16:22,386 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:16:30,746 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, "Test")
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:16:30,750 INFO 127.0.0.1 - - [30/May/2021 13:16:30] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:17:25,535 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:17:28,390 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, (client.client_id, client.client_name))
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:17:28,393 INFO 127.0.0.1 - - [30/May/2021 13:17:28] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:18:30,813 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:18:32,956 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, str(client.client_name))
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:18:32,960 INFO 127.0.0.1 - - [30/May/2021 13:18:32] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:19:58,892 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:21:21,970 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:21:23,974 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1535, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1727, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a Client.
+2021-05-30 13:21:23,976 INFO 127.0.0.1 - - [30/May/2021 13:21:23] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:22:46,118 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:22:49,320 INFO 127.0.0.1 - - [30/May/2021 13:22:49] "POST /clients HTTP/1.1" 200 -
+2021-05-30 13:24:03,606 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:24:07,564 INFO 127.0.0.1 - - [30/May/2021 13:24:07] "POST /clients HTTP/1.1" 200 -
+2021-05-30 13:25:16,955 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:25:19,616 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql, client.client_name)
+TypeError: not all arguments converted during string formatting
+2021-05-30 13:25:19,619 INFO 127.0.0.1 - - [30/May/2021 13:25:19] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:31:10,238 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:31:23,877 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:31:28,766 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "zack" does not exist
+LINE 1: insert into client (client_name) values (Zack) returning cli...
+                                                 ^
+
+2021-05-30 13:31:28,770 INFO 127.0.0.1 - - [30/May/2021 13:31:28] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:32:25,856 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:32:29,390 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 13, in create_client
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "Zack" does not exist
+LINE 1: insert into client (client_name) values ("Zack") returning c...
+                                                 ^
+
+2021-05-30 13:32:29,393 INFO 127.0.0.1 - - [30/May/2021 13:32:29] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-30 13:34:24,582 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 13:34:28,252 INFO 127.0.0.1 - - [30/May/2021 13:34:28] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 13:37:20,190 INFO 127.0.0.1 - - [30/May/2021 13:37:20] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 13:38:54,831 INFO 127.0.0.1 - - [30/May/2021 13:38:54] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 13:38:58,745 INFO 127.0.0.1 - - [30/May/2021 13:38:58] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 13:39:01,086 INFO 127.0.0.1 - - [30/May/2021 13:39:01] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 13:39:03,082 INFO 127.0.0.1 - - [30/May/2021 13:39:03] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:06:56,226 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 16:07:01,379 INFO 127.0.0.1 - - [30/May/2021 16:07:01] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:07:05,645 INFO 127.0.0.1 - - [30/May/2021 16:07:05] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:07:10,850 INFO 127.0.0.1 - - [30/May/2021 16:07:10] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:07:15,133 INFO 127.0.0.1 - - [30/May/2021 16:07:15] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:07:17,440 INFO 127.0.0.1 - - [30/May/2021 16:07:17] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 16:07:19,943 INFO 127.0.0.1 - - [30/May/2021 16:07:19] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 17:37:55,064 INFO 127.0.0.1 - - [30/May/2021 17:37:55] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 17:44:13,112 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 17:55:20,699 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 17:55:26,719 INFO 127.0.0.1 - - [30/May/2021 17:55:26] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 17:55:29,094 INFO 127.0.0.1 - - [30/May/2021 17:55:29] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 17:57:58,096 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:00:34,292 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:01:26,501 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:07:03,854 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:07:07,434 INFO 127.0.0.1 - - [30/May/2021 18:07:07] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 18:07:09,941 INFO 127.0.0.1 - - [30/May/2021 18:07:09] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 18:50:15,799 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:50:20,263 INFO 127.0.0.1 - - [30/May/2021 18:50:20] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 18:50:21,986 INFO 127.0.0.1 - - [30/May/2021 18:50:21] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 18:56:39,493 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 18:56:44,083 INFO 127.0.0.1 - - [30/May/2021 18:56:44] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 18:59:13,959 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:00:09,687 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:01:04,338 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:01:28,253 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:06:15,439 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:06:19,914 INFO 127.0.0.1 - - [30/May/2021 19:06:19] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:06:22,951 INFO 127.0.0.1 - - [30/May/2021 19:06:22] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:06:24,810 INFO 127.0.0.1 - - [30/May/2021 19:06:24] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:06:26,246 INFO 127.0.0.1 - - [30/May/2021 19:06:26] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:13:23,869 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:13:32,728 INFO 127.0.0.1 - - [30/May/2021 19:13:32] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:27:22,943 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:27:26,889 INFO 127.0.0.1 - - [30/May/2021 19:27:26] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:27:35,049 INFO 127.0.0.1 - - [30/May/2021 19:27:35] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:27:51,198 INFO 127.0.0.1 - - [30/May/2021 19:27:51] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:28:34,200 INFO 127.0.0.1 - - [30/May/2021 19:28:34] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:28:49,429 INFO 127.0.0.1 - - [30/May/2021 19:28:49] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 19:53:02,739 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 19:59:44,901 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:00:44,704 INFO 127.0.0.1 - - [30/May/2021 20:00:44] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:03:00,114 INFO 127.0.0.1 - - [30/May/2021 20:03:00] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:05:24,154 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:05:27,531 INFO 127.0.0.1 - - [30/May/2021 20:05:27] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:05:45,726 INFO 127.0.0.1 - - [30/May/2021 20:05:45] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:05:47,240 INFO 127.0.0.1 - - [30/May/2021 20:05:47] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:45:55,941 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:46:04,343 INFO 127.0.0.1 - - [30/May/2021 20:46:04] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 20:46:08,074 INFO 127.0.0.1 - - [30/May/2021 20:46:08] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-30 20:46:16,225 INFO 127.0.0.1 - - [30/May/2021 20:46:16] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:46:19,948 INFO 127.0.0.1 - - [30/May/2021 20:46:19] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 20:48:25,728 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:57:42,696 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:58:06,669 INFO 127.0.0.1 - - [30/May/2021 20:58:06] "[33mGET /clients/ HTTP/1.1[0m" 404 -
+2021-05-30 20:58:21,406 ERROR Exception on /clients [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 41, in show_all_clients
+    clients = client_service.show_all_clients()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 17, in show_all_clients
+    return self.client_dao.show_all_clients()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 25, in show_all_clients
+    client_list.append(Client(*x))
+TypeError: __init__() takes 3 positional arguments but 7 were given
+2021-05-30 20:58:21,441 INFO 127.0.0.1 - - [30/May/2021 20:58:21] "[35m[1mGET /clients HTTP/1.1[0m" 500 -
+2021-05-30 20:59:43,431 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 20:59:50,121 INFO 127.0.0.1 - - [30/May/2021 20:59:50] "GET /clients HTTP/1.1" 200 -
+2021-05-30 21:04:38,963 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:04:55,818 ERROR Exception on /clients/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 49, in show_client_by_id
+    return jsonify(client.as_json_dict())
+AttributeError: 'list' object has no attribute 'as_json_dict'
+2021-05-30 21:04:55,821 INFO 127.0.0.1 - - [30/May/2021 21:04:55] "[35m[1mGET /clients/4 HTTP/1.1[0m" 500 -
+2021-05-30 21:07:58,541 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:08:01,731 ERROR Exception on /clients/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 49, in show_client_by_id
+    json_client = [c.as_json_dict() for c in client]
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 49, in <listcomp>
+    json_client = [c.as_json_dict() for c in client]
+AttributeError: 'tuple' object has no attribute 'as_json_dict'
+2021-05-30 21:08:01,734 INFO 127.0.0.1 - - [30/May/2021 21:08:01] "[35m[1mGET /clients/4 HTTP/1.1[0m" 500 -
+2021-05-30 21:09:16,505 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:09:19,276 ERROR Exception on /clients/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 49, in show_client_by_id
+    return jsonify(client.as_json_dict())
+AttributeError: 'list' object has no attribute 'as_json_dict'
+2021-05-30 21:09:19,278 INFO 127.0.0.1 - - [30/May/2021 21:09:19] "[35m[1mGET /clients/4 HTTP/1.1[0m" 500 -
+2021-05-30 21:12:05,352 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:12:14,117 ERROR Exception on /clients/4 [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 48, in show_client_by_id
+    client = client_service.show_client_by_id(int(client_id))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 20, in show_client_by_id
+    return self.client_dao.show_client_by_id(client_id)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 34, in show_client_by_id
+    client_list.append(Client(client))
+TypeError: __init__() missing 1 required positional argument: 'client_name'
+2021-05-30 21:12:14,121 INFO 127.0.0.1 - - [30/May/2021 21:12:14] "[35m[1mGET /clients/4 HTTP/1.1[0m" 500 -
+2021-05-30 21:16:48,472 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:16:53,501 INFO 127.0.0.1 - - [30/May/2021 21:16:53] "GET /clients/4 HTTP/1.1" 200 -
+2021-05-30 21:17:00,838 INFO 127.0.0.1 - - [30/May/2021 21:17:00] "GET /clients/8 HTTP/1.1" 200 -
+2021-05-30 21:17:04,884 INFO 127.0.0.1 - - [30/May/2021 21:17:04] "GET /clients/12 HTTP/1.1" 200 -
+2021-05-30 21:23:35,812 INFO 127.0.0.1 - - [30/May/2021 21:23:35] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-30 21:24:29,769 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:24:35,035 INFO 127.0.0.1 - - [30/May/2021 21:24:35] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-30 21:32:30,583 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:35:15,880 INFO 127.0.0.1 - - [30/May/2021 21:35:15] "GET /clients/2/accounts/12 HTTP/1.1" 200 -
+2021-05-30 21:35:24,417 INFO 127.0.0.1 - - [30/May/2021 21:35:24] "GET /clients/2/accounts/13 HTTP/1.1" 200 -
+2021-05-30 21:35:31,741 INFO 127.0.0.1 - - [30/May/2021 21:35:31] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-30 21:35:42,451 INFO 127.0.0.1 - - [30/May/2021 21:35:42] "GET /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-30 21:35:48,755 INFO 127.0.0.1 - - [30/May/2021 21:35:48] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-30 21:41:04,774 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:43:01,013 INFO 127.0.0.1 - - [30/May/2021 21:43:01] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:47:27,037 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:47:30,742 INFO 127.0.0.1 - - [30/May/2021 21:47:30] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:48:37,063 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:48:42,474 INFO 127.0.0.1 - - [30/May/2021 21:48:42] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:49:19,839 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:49:26,137 INFO 127.0.0.1 - - [30/May/2021 21:49:26] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:50:55,494 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:50:59,280 INFO 127.0.0.1 - - [30/May/2021 21:50:59] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:54:41,095 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:54:45,367 INFO 127.0.0.1 - - [30/May/2021 21:54:45] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 21:56:54,469 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 21:57:02,156 INFO 127.0.0.1 - - [30/May/2021 21:57:02] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 22:00:13,146 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:00:17,338 INFO 127.0.0.1 - - [30/May/2021 22:00:17] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 22:09:08,889 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:09:14,279 INFO 127.0.0.1 - - [30/May/2021 22:09:14] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 22:13:47,810 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:13:53,289 INFO 127.0.0.1 - - [30/May/2021 22:13:53] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 22:23:21,580 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:28:11,180 INFO 127.0.0.1 - - [30/May/2021 22:28:11] "GET /clients/2/accounts?amountLessThan=300&amountGreaterThan=700 HTTP/1.1" 200 -
+2021-05-30 22:41:10,327 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:42:35,429 INFO 127.0.0.1 - - [30/May/2021 22:42:35] "PUT /clients/2 HTTP/1.1" 200 -
+2021-05-30 22:43:55,762 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:44:01,655 INFO 127.0.0.1 - - [30/May/2021 22:44:01] "PUT /clients/2 HTTP/1.1" 200 -
+2021-05-30 22:44:11,889 INFO 127.0.0.1 - - [30/May/2021 22:44:11] "PUT /clients/2 HTTP/1.1" 200 -
+2021-05-30 22:53:53,622 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-30 22:55:20,702 INFO 127.0.0.1 - - [30/May/2021 22:55:20] "PUT /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-30 22:59:32,891 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

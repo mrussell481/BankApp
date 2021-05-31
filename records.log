@@ -553,3 +553,210 @@ KeyError: 'withdraw'
 2021-05-31 15:17:01,330 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-05-31 15:17:23,657 INFO 127.0.0.1 - - [31/May/2021 15:17:23] "[35m[1mDELETE /clients/1/accounts/2 HTTP/1.1[0m" 201 -
 2021-05-31 15:18:42,765 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:14:00,870 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:14:11,167 INFO 127.0.0.1 - - [31/May/2021 18:14:11] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 18:14:13,956 INFO 127.0.0.1 - - [31/May/2021 18:14:13] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 18:14:21,999 INFO 127.0.0.1 - - [31/May/2021 18:14:21] "[35m[1mPOST /clients/30/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:14:23,782 INFO 127.0.0.1 - - [31/May/2021 18:14:23] "[35m[1mPOST /clients/30/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:14:25,229 INFO 127.0.0.1 - - [31/May/2021 18:14:25] "[35m[1mPOST /clients/30/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:14:32,468 INFO 127.0.0.1 - - [31/May/2021 18:14:32] "GET /clients HTTP/1.1" 200 -
+2021-05-31 18:14:46,023 INFO 127.0.0.1 - - [31/May/2021 18:14:46] "GET /clients/30 HTTP/1.1" 200 -
+2021-05-31 18:14:54,814 INFO 127.0.0.1 - - [31/May/2021 18:14:54] "GET /clients/30/accounts HTTP/1.1" 200 -
+2021-05-31 18:15:06,383 INFO 127.0.0.1 - - [31/May/2021 18:15:06] "GET /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:15:10,823 INFO 127.0.0.1 - - [31/May/2021 18:15:10] "GET /clients/2/accounts/2 HTTP/1.1" 200 -
+2021-05-31 18:15:14,859 INFO 127.0.0.1 - - [31/May/2021 18:15:14] "GET /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-05-31 18:15:29,612 INFO 127.0.0.1 - - [31/May/2021 18:15:29] "GET /clients/30/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 18:16:00,833 INFO 127.0.0.1 - - [31/May/2021 18:16:00] "PUT /clients/30 HTTP/1.1" 200 -
+2021-05-31 18:16:06,194 INFO 127.0.0.1 - - [31/May/2021 18:16:06] "GET /clients/30 HTTP/1.1" 200 -
+2021-05-31 18:16:26,947 INFO 127.0.0.1 - - [31/May/2021 18:16:26] "PUT /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:16:37,277 INFO 127.0.0.1 - - [31/May/2021 18:16:37] "GET /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:16:54,054 INFO 127.0.0.1 - - [31/May/2021 18:16:54] "PATCH /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:17:01,127 INFO 127.0.0.1 - - [31/May/2021 18:17:01] "GET /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:17:08,578 INFO 127.0.0.1 - - [31/May/2021 18:17:08] "PATCH /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:17:13,763 INFO 127.0.0.1 - - [31/May/2021 18:17:13] "GET /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:17:30,758 INFO 127.0.0.1 - - [31/May/2021 18:17:30] "GET /clients/30/accounts HTTP/1.1" 200 -
+2021-05-31 18:17:52,289 INFO 127.0.0.1 - - [31/May/2021 18:17:52] "[35m[1mPOST /clients/30/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:17:59,780 INFO 127.0.0.1 - - [31/May/2021 18:17:59] "GET /clients/30/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:18:04,510 INFO 127.0.0.1 - - [31/May/2021 18:18:04] "GET /clients/30/accounts HTTP/1.1" 200 -
+2021-05-31 18:21:56,056 INFO 127.0.0.1 - - [31/May/2021 18:21:56] "GET /clients HTTP/1.1" 200 -
+2021-05-31 18:25:58,544 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:26:03,828 INFO 127.0.0.1 - - [31/May/2021 18:26:03] "GET /clients HTTP/1.1" 200 -
+2021-05-31 18:26:18,440 INFO 127.0.0.1 - - [31/May/2021 18:26:18] "GET /clients/30/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 18:27:23,156 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:27:33,380 INFO 127.0.0.1 - - [31/May/2021 18:27:33] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 18:28:57,152 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:29:01,421 INFO 127.0.0.1 - - [31/May/2021 18:29:01] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 18:32:01,572 ERROR Exception on /clients/accounts [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 48, in show_client_by_id
+    client = client_service.show_client_by_id(int(client_id))
+ValueError: invalid literal for int() with base 10: 'accounts'
+2021-05-31 18:32:01,575 INFO 127.0.0.1 - - [31/May/2021 18:32:01] "[35m[1mGET /clients/accounts HTTP/1.1[0m" 500 -
+2021-05-31 18:32:09,080 INFO 127.0.0.1 - - [31/May/2021 18:32:09] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-31 18:33:07,145 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:33:48,836 INFO 127.0.0.1 - - [31/May/2021 18:33:48] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 18:33:55,186 ERROR Exception on /clients/30/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 35, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 14, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 24, in create_account
+    cursor.execute(sql)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "account" violates foreign key constraint "fk_account_client"
+DETAIL:  Key (c_id)=(30) is not present in table "client".
+
+2021-05-31 18:33:55,189 INFO 127.0.0.1 - - [31/May/2021 18:33:55] "[35m[1mPOST /clients/30/accounts HTTP/1.1[0m" 500 -
+2021-05-31 18:34:03,580 ERROR Exception on /clients/1/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 35, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 14, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 12, in create_account
+    cursor.execute(sql)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2021-05-31 18:34:03,581 INFO 127.0.0.1 - - [31/May/2021 18:34:03] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 500 -
+2021-05-31 18:34:40,569 ERROR Exception on /clients/1/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 35, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 14, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 12, in create_account
+    cursor.execute(sql)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2021-05-31 18:34:40,570 INFO 127.0.0.1 - - [31/May/2021 18:34:40] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 500 -
+2021-05-31 18:36:19,647 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:36:32,509 INFO 127.0.0.1 - - [31/May/2021 18:36:32] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:36:39,131 INFO 127.0.0.1 - - [31/May/2021 18:36:39] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:36:40,600 INFO 127.0.0.1 - - [31/May/2021 18:36:40] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:37:21,576 INFO 127.0.0.1 - - [31/May/2021 18:37:21] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 18:37:28,787 INFO 127.0.0.1 - - [31/May/2021 18:37:28] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:37:30,183 INFO 127.0.0.1 - - [31/May/2021 18:37:30] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:37:31,493 INFO 127.0.0.1 - - [31/May/2021 18:37:31] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:37:49,669 INFO 127.0.0.1 - - [31/May/2021 18:37:49] "[35m[1mDELETE /clients/1/accounts/2 HTTP/1.1[0m" 201 -
+2021-05-31 18:38:00,788 INFO 127.0.0.1 - - [31/May/2021 18:38:00] "[35m[1mPOST /clients/2/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:38:28,333 INFO 127.0.0.1 - - [31/May/2021 18:38:28] "[35m[1mDELETE /clients/2/accounts/2 HTTP/1.1[0m" 201 -
+2021-05-31 18:39:31,506 INFO 127.0.0.1 - - [31/May/2021 18:39:31] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 18:40:44,596 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:40:53,586 INFO 127.0.0.1 - - [31/May/2021 18:40:53] "GET /clients/3/accounts HTTP/1.1" 200 -
+2021-05-31 18:40:59,347 INFO 127.0.0.1 - - [31/May/2021 18:40:59] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-31 18:42:30,772 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:42:44,369 INFO 127.0.0.1 - - [31/May/2021 18:42:44] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:42:46,121 INFO 127.0.0.1 - - [31/May/2021 18:42:46] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:42:47,559 INFO 127.0.0.1 - - [31/May/2021 18:42:47] "[35m[1mPOST /clients/3/accounts HTTP/1.1[0m" 201 -
+2021-05-31 18:42:53,742 INFO 127.0.0.1 - - [31/May/2021 18:42:53] "GET /clients/3/accounts HTTP/1.1" 200 -
+2021-05-31 18:43:02,121 INFO 127.0.0.1 - - [31/May/2021 18:43:02] "GET /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:43:10,013 INFO 127.0.0.1 - - [31/May/2021 18:43:10] "GET /clients/3/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 18:44:08,499 INFO 127.0.0.1 - - [31/May/2021 18:44:08] "PUT /clients/3 HTTP/1.1" 200 -
+2021-05-31 18:44:14,751 INFO 127.0.0.1 - - [31/May/2021 18:44:14] "GET /clients/3 HTTP/1.1" 200 -
+2021-05-31 18:44:23,995 INFO 127.0.0.1 - - [31/May/2021 18:44:23] "PUT /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:44:30,234 INFO 127.0.0.1 - - [31/May/2021 18:44:30] "GET /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:44:46,906 INFO 127.0.0.1 - - [31/May/2021 18:44:46] "PATCH /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:44:50,961 INFO 127.0.0.1 - - [31/May/2021 18:44:50] "GET /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:44:56,213 INFO 127.0.0.1 - - [31/May/2021 18:44:56] "PATCH /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:45:00,910 INFO 127.0.0.1 - - [31/May/2021 18:45:00] "GET /clients/3/accounts/1 HTTP/1.1" 200 -
+2021-05-31 18:45:11,990 INFO 127.0.0.1 - - [31/May/2021 18:45:11] "PATCH /clients/3/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-05-31 18:45:18,973 INFO 127.0.0.1 - - [31/May/2021 18:45:18] "GET /clients/3/accounts HTTP/1.1" 200 -
+2021-05-31 18:45:47,901 INFO 127.0.0.1 - - [31/May/2021 18:45:47] "[35m[1mDELETE /clients/3 HTTP/1.1[0m" 201 -
+2021-05-31 18:46:46,477 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 18:47:15,414 INFO 127.0.0.1 - - [31/May/2021 18:47:15] "GET /clients HTTP/1.1" 200 -
+2021-05-31 19:09:15,135 ERROR Exception on /clients [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 26, in create_client
+    client_service.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\client_service_impl.py", line 14, in create_client
+    return self.client_dao.create_client(client)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\client_dao_impl.py", line 12, in create_client
+    cursor.execute(sql)
+psycopg2.errors.AdminShutdown: terminating connection due to administrator command
+SSL connection has been closed unexpectedly
+
+2021-05-31 19:09:15,167 INFO 127.0.0.1 - - [31/May/2021 19:09:15] "[35m[1mPOST /clients HTTP/1.1[0m" 500 -
+2021-05-31 19:10:14,557 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 19:10:19,045 INFO 127.0.0.1 - - [31/May/2021 19:10:19] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 19:10:23,076 INFO 127.0.0.1 - - [31/May/2021 19:10:23] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-05-31 19:10:29,057 INFO 127.0.0.1 - - [31/May/2021 19:10:29] "[35m[1mPOST /clients/38/accounts HTTP/1.1[0m" 201 -
+2021-05-31 19:10:32,409 INFO 127.0.0.1 - - [31/May/2021 19:10:32] "[35m[1mPOST /clients/38/accounts HTTP/1.1[0m" 201 -
+2021-05-31 19:10:33,709 INFO 127.0.0.1 - - [31/May/2021 19:10:33] "[35m[1mPOST /clients/38/accounts HTTP/1.1[0m" 201 -
+2021-05-31 19:10:35,421 INFO 127.0.0.1 - - [31/May/2021 19:10:35] "[35m[1mPOST /clients/38/accounts HTTP/1.1[0m" 201 -
+2021-05-31 19:10:40,153 INFO 127.0.0.1 - - [31/May/2021 19:10:40] "GET /clients HTTP/1.1" 200 -
+2021-05-31 19:10:48,785 INFO 127.0.0.1 - - [31/May/2021 19:10:48] "GET /clients/38 HTTP/1.1" 200 -
+2021-05-31 19:10:53,762 INFO 127.0.0.1 - - [31/May/2021 19:10:53] "GET /clients/38/accounts HTTP/1.1" 200 -
+2021-05-31 19:11:02,001 INFO 127.0.0.1 - - [31/May/2021 19:11:02] "GET /clients/37/accounts HTTP/1.1" 200 -
+2021-05-31 19:11:06,783 INFO 127.0.0.1 - - [31/May/2021 19:11:06] "GET /clients/38/accounts HTTP/1.1" 200 -
+2021-05-31 19:11:15,345 INFO 127.0.0.1 - - [31/May/2021 19:11:15] "GET /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:11:21,514 INFO 127.0.0.1 - - [31/May/2021 19:11:21] "GET /clients/38/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 19:11:31,947 INFO 127.0.0.1 - - [31/May/2021 19:11:31] "PUT /clients/38 HTTP/1.1" 200 -
+2021-05-31 19:11:36,643 INFO 127.0.0.1 - - [31/May/2021 19:11:36] "GET /clients/38 HTTP/1.1" 200 -
+2021-05-31 19:11:42,339 INFO 127.0.0.1 - - [31/May/2021 19:11:42] "PUT /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:11:45,715 INFO 127.0.0.1 - - [31/May/2021 19:11:45] "GET /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:12:01,998 INFO 127.0.0.1 - - [31/May/2021 19:12:01] "PATCH /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:12:11,104 INFO 127.0.0.1 - - [31/May/2021 19:12:11] "PATCH /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:12:16,537 INFO 127.0.0.1 - - [31/May/2021 19:12:16] "GET /clients/38/accounts/1 HTTP/1.1" 200 -
+2021-05-31 19:12:22,733 ERROR Exception on /clients/3/accounts/1/transfer/2 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 114, in transfer_funds
+    account_service.transfer_funds(int(client_id), int(account_id_1), int(account_id_2), int(amount))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 32, in transfer_funds
+    return self.account_dao.transfer_funds(client_id, account_id_1, account_id_2, change)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 82, in transfer_funds
+    first_change = int(first_account[3]) - change
+TypeError: 'NoneType' object is not subscriptable
+2021-05-31 19:12:22,736 INFO 127.0.0.1 - - [31/May/2021 19:12:22] "[35m[1mPATCH /clients/3/accounts/1/transfer/2 HTTP/1.1[0m" 500 -
+2021-05-31 19:12:28,492 INFO 127.0.0.1 - - [31/May/2021 19:12:28] "PATCH /clients/38/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-05-31 19:12:37,832 INFO 127.0.0.1 - - [31/May/2021 19:12:37] "GET /clients/38/accounts HTTP/1.1" 200 -
+2021-05-31 19:12:55,047 INFO 127.0.0.1 - - [31/May/2021 19:12:55] "[35m[1mDELETE /clients/38/accounts/2 HTTP/1.1[0m" 201 -
+2021-05-31 19:13:59,022 INFO 127.0.0.1 - - [31/May/2021 19:13:59] "[35m[1mDELETE /clients/38 HTTP/1.1[0m" 201 -
+2021-05-31 19:15:56,864 INFO 127.0.0.1 - - [31/May/2021 19:15:56] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -

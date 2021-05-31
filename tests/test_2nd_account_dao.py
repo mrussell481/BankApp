@@ -58,5 +58,5 @@ def test_transfer_funds():
 
 
 def test_delete_account():
-    result = account_dao.delete_account(account3.c_id, account3.account_id)
+    result = account_dao.delete_account(account1.c_id, account1.account_id)
     assert result

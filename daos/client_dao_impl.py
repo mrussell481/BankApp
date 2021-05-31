@@ -16,7 +16,7 @@ class ClientDaoImplementation(ClientDAO):
         return client
 
     def show_all_clients(self) -> List[Client]:
-        sql = """select * from client"""
+        sql = """select * from client order by client_id"""
         cursor = connection.cursor()
         cursor.execute(sql)
         records = cursor.fetchall()

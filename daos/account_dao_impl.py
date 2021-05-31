@@ -8,7 +8,7 @@ class AccountDaoImplementation(AccountDAO):
 
     def create_account(self, account: Account) -> Account:
         cursor = connection.cursor()
-        sql = """select * from account where c_id = {} """.format(account.c_id)
+        sql = """select * from account where c_id = {} order by account_id""".format(account.c_id)
         cursor.execute(sql)
         accounts = cursor.fetchall()
         account_list = []
@@ -27,7 +27,7 @@ class AccountDaoImplementation(AccountDAO):
 
     def show_client_accounts(self, client_id: int) -> List[Account]:
         cursor = connection.cursor()
-        sql = """select * from account where c_id = {}""".format(client_id)
+        sql = """select * from account where c_id = {} order by account_id""".format(client_id)
         cursor.execute(sql)
         records = cursor.fetchall()
         account_list = []
@@ -45,8 +45,8 @@ class AccountDaoImplementation(AccountDAO):
 
     def show_account_by_range(self, client_id: int, less_amount: int, greater_amount: int) -> List[Account]:
         cursor = connection.cursor()
-        sql = """select * from account where c_id = {} and funds between {} and {}""".format(client_id, less_amount, greater_amount)
-        cursor.execute(sql)
+        sql = """select * from account where c_id = %s and funds between %s and %s order by account_id"""
+        cursor.execute(sql, (client_id, less_amount, greater_amount))
         records = cursor.fetchall()
         account_list = []
         for x in records:

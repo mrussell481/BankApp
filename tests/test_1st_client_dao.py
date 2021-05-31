@@ -36,5 +36,5 @@ def test_update_client():
 
 
 def test_delete_client():
-    result = client_dao.delete_client(test_client.client_id)
+    result = client_dao.delete_client(4)
     assert result

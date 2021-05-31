@@ -62,11 +62,43 @@ class AccountDaoImplementation(AccountDAO):
         connection.commit()
         return account
 
-    def add_remove_funds(self, client_id: int, account_id: int, change: int) -> Account:
-        pass
+    def add_remove_funds(self, client_id: int, account_id: int, change: int) -> bool:
+        cursor = connection.cursor()
+        sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id)
+        cursor.execute(sql)
+        account = cursor.fetchone()
+        new_amount = int(account[3]) + change
+        sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(new_amount, client_id, account_id,)
+        cursor.execute(sql)
+        connection.commit()
+        return True
 
     def transfer_funds(self, client_id: int, account_id_1: int, account_id_2: int, change: int) -> bool:
-        pass
+        # First block where funds are removed from account 1.
+        cursor = connection.cursor()
+        sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id_1)
+        cursor.execute(sql)
+        first_account = cursor.fetchone()
+        first_change = int(first_account[3]) - change
+        sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(first_change, client_id,
+                                                                                             account_id_1)
+        cursor.execute(sql)
+        connection.commit()
+        # Second block where funds are added to account 2.
+        cursor = connection.cursor()
+        sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id_2)
+        cursor.execute(sql)
+        second_account = cursor.fetchone()
+        second_change = int(second_account[3]) + change
+        sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(second_change, client_id,
+                                                                                             account_id_2)
+        cursor.execute(sql)
+        connection.commit()
+        return True
 
     def delete_account(self, client_id: int, account_id: int) -> bool:
-        pass
+        cursor = connection.cursor()
+        sql = """delete from account where c_id = {} and account_id = {}""".format(client_id, account_id)
+        cursor.execute(sql)
+        connection.commit()
+        return True

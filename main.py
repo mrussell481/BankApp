@@ -91,22 +91,43 @@ def update_account(client_id: str, account_id: str):
 
 @app.route("/clients/<client_id>/accounts/<account_id>", methods=["PATCH"])
 def add_remove_funds(client_id: str, account_id: str):
-    pass
+    body = request.json
+    try:
+        change: int = body["withdraw"] * -1
+        account_service.add_remove_funds(int(client_id), int(account_id), change)
+        if True:
+            return f"Successfully withdrew funds from account {account_id}."
+    except KeyError:
+        try:
+            change: int = body["deposit"]
+            account_service.add_remove_funds(int(client_id), int(account_id), change)
+            if True:
+                return f"Successfully deposited funds into account {account_id}."
+        except KeyError:
+            return "Incorrect fund statement.", 422
 
 
 @app.route("/clients/<client_id>/accounts/<account_id_1>/transfer/<account_id_2>", methods=["PATCH"])
 def transfer_funds(client_id: str, account_id_1: str, account_id_2: str):
-    pass
+    body = request.json
+    amount: int = body["amount"]
+    account_service.transfer_funds(int(client_id), int(account_id_1), int(account_id_2), int(amount))
+    if True:
+        return f"Successfully transferred ${amount} from account {account_id_1} to account {account_id_2}."
 
 
 @app.route("/clients/<client_id>", methods=["DELETE"])
 def delete_client(client_id: str):
-    pass
+    client_service.delete_client(int(client_id))
+    if True:
+        return f"Client {client_id} and all associated accounts have been removed.", 201
 
 
 @app.route("/clients/<client_id>/accounts/<account_id>", methods=["DELETE"])
 def delete_account(client_id: str, account_id: str):
-    pass
+    account_service.delete_account(int(client_id), int(account_id))
+    if True:
+        return f"Account {account_id} from client {client_id} has been successfully removed.", 201
 
 
 if __name__ == '__main__':

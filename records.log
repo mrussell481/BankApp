@@ -452,3 +452,104 @@ TypeError: __init__() missing 1 required positional argument: 'client_name'
 2021-05-30 22:53:53,622 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-05-30 22:55:20,702 INFO 127.0.0.1 - - [30/May/2021 22:55:20] "PUT /clients/2/accounts/1 HTTP/1.1" 200 -
 2021-05-30 22:59:32,891 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 13:51:10,757 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 13:51:17,053 INFO 127.0.0.1 - - [31/May/2021 13:51:17] "GET /clients HTTP/1.1" 200 -
+2021-05-31 13:51:39,417 INFO 127.0.0.1 - - [31/May/2021 13:51:39] "GET /clients/2 HTTP/1.1" 200 -
+2021-05-31 13:51:43,514 INFO 127.0.0.1 - - [31/May/2021 13:51:43] "GET /clients/1 HTTP/1.1" 200 -
+2021-05-31 13:51:48,536 INFO 127.0.0.1 - - [31/May/2021 13:51:48] "GET /clients/4 HTTP/1.1" 200 -
+2021-05-31 13:51:56,417 INFO 127.0.0.1 - - [31/May/2021 13:51:56] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-05-31 13:52:08,610 INFO 127.0.0.1 - - [31/May/2021 13:52:08] "GET /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 13:52:19,940 INFO 127.0.0.1 - - [31/May/2021 13:52:19] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 13:54:52,503 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 13:54:58,445 INFO 127.0.0.1 - - [31/May/2021 13:54:58] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-05-31 14:17:24,875 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:17:37,060 ERROR Exception on /clients/2/accounts/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 96, in add_remove_funds
+    account_service.add_remove_funds(int(client_id), int(account_id), change)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 29, in add_remove_funds
+    return self.account_dao.add_remove_funds(client_id, account_id, change)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 70, in add_remove_funds
+    new_amount = int(account.funds) - change
+AttributeError: 'tuple' object has no attribute 'funds'
+2021-05-31 14:17:37,112 INFO 127.0.0.1 - - [31/May/2021 14:17:37] "[35m[1mPATCH /clients/2/accounts/1 HTTP/1.1[0m" 500 -
+2021-05-31 14:19:28,100 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:19:31,052 ERROR Exception on /clients/2/accounts/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 95, in add_remove_funds
+    change: int = body[0]
+KeyError: 0
+2021-05-31 14:19:31,055 INFO 127.0.0.1 - - [31/May/2021 14:19:31] "[35m[1mPATCH /clients/2/accounts/1 HTTP/1.1[0m" 500 -
+2021-05-31 14:21:01,365 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:21:06,283 INFO 127.0.0.1 - - [31/May/2021 14:21:06] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:21:37,669 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:21:40,918 ERROR Exception on /clients/2/accounts/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 96, in add_remove_funds
+    account_service.add_remove_funds(int(client_id), int(account_id), change)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 29, in add_remove_funds
+    return self.account_dao.add_remove_funds(client_id, account_id, change)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 70, in add_remove_funds
+    new_amount = int(account.funds) - change
+AttributeError: 'tuple' object has no attribute 'funds'
+2021-05-31 14:21:40,921 INFO 127.0.0.1 - - [31/May/2021 14:21:40] "[35m[1mPATCH /clients/2/accounts/1 HTTP/1.1[0m" 500 -
+2021-05-31 14:23:32,293 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:23:36,472 INFO 127.0.0.1 - - [31/May/2021 14:23:36] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:25:00,176 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:25:07,239 INFO 127.0.0.1 - - [31/May/2021 14:25:07] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:39:36,327 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:40:13,916 ERROR Exception on /clients/2/accounts/1 [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 95, in add_remove_funds
+    if body["withdraw"]:
+KeyError: 'withdraw'
+2021-05-31 14:40:13,919 INFO 127.0.0.1 - - [31/May/2021 14:40:13] "[35m[1mPATCH /clients/2/accounts/1 HTTP/1.1[0m" 500 -
+2021-05-31 14:43:05,555 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:43:15,249 INFO 127.0.0.1 - - [31/May/2021 14:43:15] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:44:22,542 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:44:30,872 INFO 127.0.0.1 - - [31/May/2021 14:44:30] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:44:39,621 INFO 127.0.0.1 - - [31/May/2021 14:44:39] "PATCH /clients/2/accounts/1 HTTP/1.1" 200 -
+2021-05-31 14:45:00,776 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 14:45:13,592 INFO 127.0.0.1 - - [31/May/2021 14:45:13] "[31m[1mPATCH /clients/2/accounts/1 HTTP/1.1[0m" 422 -
+2021-05-31 14:45:33,609 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 15:02:00,997 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 15:02:27,708 INFO 127.0.0.1 - - [31/May/2021 15:02:27] "PATCH /clients/2/accounts/2/transfer/1 HTTP/1.1" 200 -
+2021-05-31 15:08:11,993 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 15:12:46,087 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 15:13:46,782 INFO 127.0.0.1 - - [31/May/2021 15:13:46] "[35m[1mDELETE /clients/3 HTTP/1.1[0m" 201 -
+2021-05-31 15:14:01,123 INFO 127.0.0.1 - - [31/May/2021 15:14:01] "[35m[1mDELETE /clients/2 HTTP/1.1[0m" 201 -
+2021-05-31 15:17:01,330 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-05-31 15:17:23,657 INFO 127.0.0.1 - - [31/May/2021 15:17:23] "[35m[1mDELETE /clients/1/accounts/2 HTTP/1.1[0m" 201 -
+2021-05-31 15:18:42,765 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

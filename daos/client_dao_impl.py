@@ -41,4 +41,11 @@ class ClientDaoImplementation(ClientDAO):
         return client
 
     def delete_client(self, client_id: int) -> bool:
-        pass
+        cursor = connection.cursor()
+        sql = """delete from account where c_id = {}""".format(client_id)
+        cursor.execute(sql)
+        connection.commit()
+        sql = """delete from client where client_id = {}""".format(client_id)
+        cursor.execute(sql)
+        connection.commit()
+        return True

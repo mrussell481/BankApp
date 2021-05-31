@@ -38,7 +38,7 @@ class ClientDaoImplementation(ClientDAO):
         sql = """update client set client_name = '{}' where client_id = {};""".format(client.client_name, client.client_id)
         cursor.execute(sql)
         connection.commit()
-        print("Hello World")
+        print("Yello World")
         return client
 
     def delete_client(self, client_id: int) -> bool:

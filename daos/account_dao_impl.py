@@ -83,9 +83,7 @@ class AccountDaoImplementation(AccountDAO):
         sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(first_change, client_id,
                                                                                              account_id_1)
         cursor.execute(sql)
-        connection.commit()
         # Second block where funds are added to account 2.
-        cursor = connection.cursor()
         sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id_2)
         cursor.execute(sql)
         second_account = cursor.fetchone()

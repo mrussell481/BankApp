@@ -51,9 +51,16 @@ def show_client_by_id(client_id: str):
 
 @app.route("/clients/<client_id>/accounts", methods=["GET"])
 def show_client_accounts(client_id: str):
-    accounts = account_service.show_client_accounts(int(client_id))
-    json_accounts = [a.as_json_dict() for a in accounts]
-    return jsonify(json_accounts)
+    less_amount = request.args.get("amountLessThan")
+    greater_amount = request.args.get("amountGreaterThan")
+    if less_amount is not None and greater_amount is not None:
+        accounts = account_service.show_account_by_range(int(client_id), int(less_amount), int(greater_amount))
+        json_accounts = [a.as_json_dict() for a in accounts]
+        return jsonify(json_accounts)
+    else:
+        accounts = account_service.show_client_accounts(int(client_id))
+        json_accounts = [a.as_json_dict() for a in accounts]
+        return jsonify(json_accounts)
 
 
 @app.route("/clients/<client_id>/accounts/<account_id>", methods=["GET"])
@@ -61,13 +68,16 @@ def show_account_by_id(client_id: str, account_id: str):
     account = account_service.show_account_by_id(int(client_id), int(account_id))
     return jsonify(account.as_json_dict())
 
-
+'''
 @app.route("/clients/<client_id>/accounts?amountLessThan=<less_amount>&amountGreaterThan=<greater_amount>",
            methods=["GET"])
-def show_account_by_range(client_id: str, less_amount: str, greater_amount: str):
+def show_account_by_range(client_id: str):
+    less_amount=request.args.get("less_amount")
+    greater_amount=request.args.get("greater_amount")
     accounts = account_service.show_account_by_range(int(client_id), int(less_amount), int(greater_amount))
     json_accounts = [a.as_json_dict() for a in accounts]
     return jsonify(json_accounts)
+'''
 
 
 @app.route("/clients/<client_id>", methods=["PUT"])

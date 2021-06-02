@@ -2,7 +2,10 @@ from typing import List
 from daos.client_dao import ClientDAO
 from entities.client import Client
 # Import Exceptions here
+from exceptions.client_not_found import ClientNotFound
+from exceptions.bad_request import BadRequest
 from services.client_service import ClientService
+import traceback
 
 
 class ClientServiceImpl(ClientService):
@@ -23,4 +26,5 @@ class ClientServiceImpl(ClientService):
         return self.client_dao.update_client(client)
 
     def delete_client(self, client_id: int) -> bool:
-        return self.client_dao.delete_client(client_id)
+        self.client_dao.delete_client(client_id)
+        return True

@@ -79,7 +79,7 @@ class AccountDaoImplementation(AccountDAO):
         sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id_1)
         cursor.execute(sql)
         first_account = cursor.fetchone()
-        first_change = int(first_account[3]) - change
+        first_change = int(first_account[3]) + change
         sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(first_change, client_id,
                                                                                              account_id_1)
         cursor.execute(sql)
@@ -87,7 +87,7 @@ class AccountDaoImplementation(AccountDAO):
         sql = """select * from account where c_id = {} and account_id = {}""".format(client_id, account_id_2)
         cursor.execute(sql)
         second_account = cursor.fetchone()
-        second_change = int(second_account[3]) + change
+        second_change = int(second_account[3]) - change
         sql = """update account set funds = {} where c_id = {} and account_id = {}""".format(second_change, client_id,
                                                                                              account_id_2)
         cursor.execute(sql)

@@ -771,3 +771,351 @@ TypeError: 'NoneType' object is not subscriptable
 2021-06-01 13:13:47,368 INFO 127.0.0.1 - - [01/Jun/2021 13:13:47] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
 2021-06-01 13:14:56,411 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-06-01 13:15:03,207 INFO 127.0.0.1 - - [01/Jun/2021 13:15:03] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 16:56:42,652 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 16:56:54,233 INFO 127.0.0.1 - - [01/Jun/2021 16:56:54] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:11:19,736 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:11:53,445 INFO 127.0.0.1 - - [01/Jun/2021 17:11:53] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 17:12:02,750 INFO 127.0.0.1 - - [01/Jun/2021 17:12:02] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:12:31,325 INFO 127.0.0.1 - - [01/Jun/2021 17:12:31] "[33mDELETE /clients/12 HTTP/1.1[0m" 404 -
+2021-06-01 17:14:30,489 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:14:37,324 INFO 127.0.0.1 - - [01/Jun/2021 17:14:37] "[35m[1mDELETE /clients/12 HTTP/1.1[0m" 201 -
+2021-06-01 17:14:47,512 INFO 127.0.0.1 - - [01/Jun/2021 17:14:47] "[33mDELETE /clients/12 HTTP/1.1[0m" 404 -
+2021-06-01 17:14:53,235 INFO 127.0.0.1 - - [01/Jun/2021 17:14:53] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:14:59,810 INFO 127.0.0.1 - - [01/Jun/2021 17:14:59] "[33mDELETE /clients/13 HTTP/1.1[0m" 404 -
+2021-06-01 17:15:56,227 INFO 127.0.0.1 - - [01/Jun/2021 17:15:56] "[33mDELETE /clients/13 HTTP/1.1[0m" 404 -
+2021-06-01 17:16:01,478 INFO 127.0.0.1 - - [01/Jun/2021 17:16:01] "[33mDELETE /clients/14 HTTP/1.1[0m" 404 -
+2021-06-01 17:16:39,071 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:16:47,443 INFO 127.0.0.1 - - [01/Jun/2021 17:16:47] "[35m[1mDELETE /clients/14 HTTP/1.1[0m" 201 -
+2021-06-01 17:16:53,253 INFO 127.0.0.1 - - [01/Jun/2021 17:16:53] "[35m[1mDELETE /clients/15 HTTP/1.1[0m" 201 -
+2021-06-01 17:17:05,291 INFO 127.0.0.1 - - [01/Jun/2021 17:17:05] "[35m[1mDELETE /clients/16 HTTP/1.1[0m" 201 -
+2021-06-01 17:17:08,754 INFO 127.0.0.1 - - [01/Jun/2021 17:17:08] "[33mDELETE /clients/16 HTTP/1.1[0m" 404 -
+2021-06-01 17:17:14,576 INFO 127.0.0.1 - - [01/Jun/2021 17:17:14] "[35m[1mDELETE /clients/18 HTTP/1.1[0m" 201 -
+2021-06-01 17:17:20,477 INFO 127.0.0.1 - - [01/Jun/2021 17:17:20] "[35m[1mDELETE /clients/19 HTTP/1.1[0m" 201 -
+2021-06-01 17:17:23,220 INFO 127.0.0.1 - - [01/Jun/2021 17:17:23] "[33mDELETE /clients/19 HTTP/1.1[0m" 404 -
+2021-06-01 17:17:27,950 INFO 127.0.0.1 - - [01/Jun/2021 17:17:27] "[35m[1mDELETE /clients/20 HTTP/1.1[0m" 201 -
+2021-06-01 17:17:33,233 INFO 127.0.0.1 - - [01/Jun/2021 17:17:33] "[31m[1mDELETE /clients/2 HTTP/1.1[0m" 422 -
+2021-06-01 17:17:38,220 INFO 127.0.0.1 - - [01/Jun/2021 17:17:38] "[33mDELETE /clients/21 HTTP/1.1[0m" 404 -
+2021-06-01 17:19:37,148 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:19:40,915 INFO 127.0.0.1 - - [01/Jun/2021 17:19:40] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:19:45,591 INFO 127.0.0.1 - - [01/Jun/2021 17:19:45] "[33mDELETE /clients/21 HTTP/1.1[0m" 404 -
+2021-06-01 17:19:49,183 INFO 127.0.0.1 - - [01/Jun/2021 17:19:49] "[33mDELETE /clients/22 HTTP/1.1[0m" 404 -
+2021-06-01 17:29:23,990 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:29:32,954 INFO 127.0.0.1 - - [01/Jun/2021 17:29:32] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:29:37,246 INFO 127.0.0.1 - - [01/Jun/2021 17:29:37] "[33mDELETE /clients/22 HTTP/1.1[0m" 404 -
+2021-06-01 17:29:40,783 INFO 127.0.0.1 - - [01/Jun/2021 17:29:40] "[33mDELETE /clients/23 HTTP/1.1[0m" 404 -
+2021-06-01 17:29:46,657 INFO 127.0.0.1 - - [01/Jun/2021 17:29:46] "[33mDELETE /clients/1 HTTP/1.1[0m" 404 -
+2021-06-01 17:29:58,428 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:30:07,718 INFO 127.0.0.1 - - [01/Jun/2021 17:30:07] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:37:31,522 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:37:37,714 INFO 127.0.0.1 - - [01/Jun/2021 17:37:37] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:37:44,517 INFO 127.0.0.1 - - [01/Jun/2021 17:37:44] "DELETE /clients/25 HTTP/1.1" 200 -
+2021-06-01 17:39:13,633 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:39:19,943 INFO 127.0.0.1 - - [01/Jun/2021 17:39:19] "[35m[1mDELETE /clients/25 HTTP/1.1[0m" 201 -
+2021-06-01 17:39:28,772 INFO 127.0.0.1 - - [01/Jun/2021 17:39:28] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 17:39:33,685 INFO 127.0.0.1 - - [01/Jun/2021 17:39:33] "[35m[1mDELETE /clients/26 HTTP/1.1[0m" 201 -
+2021-06-01 17:39:38,544 INFO 127.0.0.1 - - [01/Jun/2021 17:39:38] "[33mDELETE /clients/998 HTTP/1.1[0m" 404 -
+2021-06-01 17:39:42,318 INFO 127.0.0.1 - - [01/Jun/2021 17:39:42] "[33mDELETE /clients/997 HTTP/1.1[0m" 404 -
+2021-06-01 17:39:45,346 INFO 127.0.0.1 - - [01/Jun/2021 17:39:45] "[33mDELETE /clients/996 HTTP/1.1[0m" 404 -
+2021-06-01 17:39:49,782 INFO 127.0.0.1 - - [01/Jun/2021 17:39:49] "[35m[1mDELETE /clients/28 HTTP/1.1[0m" 201 -
+2021-06-01 17:39:53,301 INFO 127.0.0.1 - - [01/Jun/2021 17:39:53] "[35m[1mDELETE /clients/29 HTTP/1.1[0m" 201 -
+2021-06-01 17:39:57,619 INFO 127.0.0.1 - - [01/Jun/2021 17:39:57] "[35m[1mDELETE /clients/30 HTTP/1.1[0m" 201 -
+2021-06-01 17:40:02,496 INFO 127.0.0.1 - - [01/Jun/2021 17:40:02] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 17:40:07,363 INFO 127.0.0.1 - - [01/Jun/2021 17:40:07] "[33mDELETE /clients/31 HTTP/1.1[0m" 404 -
+2021-06-01 17:40:11,587 INFO 127.0.0.1 - - [01/Jun/2021 17:40:11] "[33mDELETE /clients/32 HTTP/1.1[0m" 404 -
+2021-06-01 17:41:45,872 INFO 127.0.0.1 - - [01/Jun/2021 17:41:45] "[33mDELETE /clients/32 HTTP/1.1[0m" 404 -
+2021-06-01 17:42:00,878 INFO 127.0.0.1 - - [01/Jun/2021 17:42:00] "[33mDELETE /clients/1 HTTP/1.1[0m" 404 -
+2021-06-01 17:44:19,587 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:44:49,055 INFO 127.0.0.1 - - [01/Jun/2021 17:44:49] "[35m[1mDELETE /clients/2/accounts/7 HTTP/1.1[0m" 201 -
+2021-06-01 17:44:55,665 INFO 127.0.0.1 - - [01/Jun/2021 17:44:55] "[35m[1mDELETE /clients/2/accounts/7 HTTP/1.1[0m" 201 -
+2021-06-01 17:45:33,513 INFO 127.0.0.1 - - [01/Jun/2021 17:45:33] "[35m[1mDELETE /clients/2/accounts/7 HTTP/1.1[0m" 201 -
+2021-06-01 17:46:37,719 INFO 127.0.0.1 - - [01/Jun/2021 17:46:37] "GET /clients/2/accounts HTTP/1.1" 200 -
+2021-06-01 17:47:49,338 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:48:01,047 INFO 127.0.0.1 - - [01/Jun/2021 17:48:01] "[33mGET /clients/2/accounts/7 HTTP/1.1[0m" 404 -
+2021-06-01 17:48:08,778 INFO 127.0.0.1 - - [01/Jun/2021 17:48:08] "GET /clients/2/accounts/10 HTTP/1.1" 200 -
+2021-06-01 17:48:13,761 INFO 127.0.0.1 - - [01/Jun/2021 17:48:13] "GET /clients/2/accounts/9 HTTP/1.1" 200 -
+2021-06-01 17:48:18,801 INFO 127.0.0.1 - - [01/Jun/2021 17:48:18] "[33mGET /clients/2/accounts/8 HTTP/1.1[0m" 404 -
+2021-06-01 17:48:22,436 INFO 127.0.0.1 - - [01/Jun/2021 17:48:22] "[33mGET /clients/2/accounts/7 HTTP/1.1[0m" 404 -
+2021-06-01 17:53:08,875 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:53:19,761 INFO 127.0.0.1 - - [01/Jun/2021 17:53:19] "[35m[1mDELETE /clients/2/accounts/9 HTTP/1.1[0m" 201 -
+2021-06-01 17:53:26,686 INFO 127.0.0.1 - - [01/Jun/2021 17:53:26] "[35m[1mDELETE /clients/2/accounts/9 HTTP/1.1[0m" 201 -
+2021-06-01 17:57:04,817 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:57:12,280 INFO 127.0.0.1 - - [01/Jun/2021 17:57:12] "[33mDELETE /clients/2/accounts/9 HTTP/1.1[0m" 404 -
+2021-06-01 17:57:17,120 INFO 127.0.0.1 - - [01/Jun/2021 17:57:17] "[35m[1mDELETE /clients/2/accounts/10 HTTP/1.1[0m" 201 -
+2021-06-01 17:57:19,682 INFO 127.0.0.1 - - [01/Jun/2021 17:57:19] "[33mDELETE /clients/2/accounts/10 HTTP/1.1[0m" 404 -
+2021-06-01 17:57:32,509 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:57:38,280 INFO 127.0.0.1 - - [01/Jun/2021 17:57:38] "[33mDELETE /clients/2/accounts/11 HTTP/1.1[0m" 404 -
+2021-06-01 17:57:42,949 INFO 127.0.0.1 - - [01/Jun/2021 17:57:42] "[35m[1mDELETE /clients/2/accounts/12 HTTP/1.1[0m" 201 -
+2021-06-01 17:57:45,485 INFO 127.0.0.1 - - [01/Jun/2021 17:57:45] "[33mDELETE /clients/2/accounts/12 HTTP/1.1[0m" 404 -
+2021-06-01 17:59:47,564 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 17:59:54,338 INFO 127.0.0.1 - - [01/Jun/2021 17:59:54] "[33mDELETE /clients/38/accounts/2 HTTP/1.1[0m" 404 -
+2021-06-01 18:00:06,481 INFO 127.0.0.1 - - [01/Jun/2021 18:00:06] "[33mDELETE /clients/2/accounts/14 HTTP/1.1[0m" 404 -
+2021-06-01 18:00:13,178 INFO 127.0.0.1 - - [01/Jun/2021 18:00:13] "[35m[1mDELETE /clients/2/accounts/15 HTTP/1.1[0m" 201 -
+2021-06-01 18:03:42,674 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:04:01,648 INFO 127.0.0.1 - - [01/Jun/2021 18:04:01] "[33mPOST /clients/38/accounts HTTP/1.1[0m" 404 -
+2021-06-01 18:04:09,312 INFO 127.0.0.1 - - [01/Jun/2021 18:04:09] "[33mPOST /clients/1/accounts HTTP/1.1[0m" 404 -
+2021-06-01 18:04:54,462 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:05:01,012 INFO 127.0.0.1 - - [01/Jun/2021 18:05:01] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 18:05:19,679 INFO 127.0.0.1 - - [01/Jun/2021 18:05:19] "[33mPOST /clients/999/accounts HTTP/1.1[0m" 404 -
+2021-06-01 18:05:25,386 INFO 127.0.0.1 - - [01/Jun/2021 18:05:25] "[33mPOST /clients/99/accounts HTTP/1.1[0m" 404 -
+2021-06-01 18:05:28,149 INFO 127.0.0.1 - - [01/Jun/2021 18:05:28] "[33mPOST /clients/9/accounts HTTP/1.1[0m" 404 -
+2021-06-01 18:06:10,174 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:06:21,414 INFO 127.0.0.1 - - [01/Jun/2021 18:06:21] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 18:06:33,298 INFO 127.0.0.1 - - [01/Jun/2021 18:06:33] "[35m[1mPOST /clients/9/accounts HTTP/1.1[0m" 201 -
+2021-06-01 18:06:37,648 ERROR Exception on /clients/99/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 37, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 15, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 24, in create_account
+    cursor.execute(sql)
+psycopg2.errors.ForeignKeyViolation: insert or update on table "account" violates foreign key constraint "fk_account_client"
+DETAIL:  Key (c_id)=(99) is not present in table "client".
+
+2021-06-01 18:06:37,680 INFO 127.0.0.1 - - [01/Jun/2021 18:06:37] "[35m[1mPOST /clients/99/accounts HTTP/1.1[0m" 500 -
+2021-06-01 18:06:41,582 ERROR Exception on /clients/9/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 37, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 15, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 12, in create_account
+    cursor.execute(sql)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2021-06-01 18:06:41,583 INFO 127.0.0.1 - - [01/Jun/2021 18:06:41] "[35m[1mPOST /clients/9/accounts HTTP/1.1[0m" 500 -
+2021-06-01 18:06:50,476 ERROR Exception on /clients/1/accounts [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\main.py", line 37, in create_account
+    account_service.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\services\account_service_impl.py", line 15, in create_account
+    return self.account_dao.create_account(account)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\BankApp\daos\account_dao_impl.py", line 12, in create_account
+    cursor.execute(sql)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+2021-06-01 18:06:50,477 INFO 127.0.0.1 - - [01/Jun/2021 18:06:50] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 500 -
+2021-06-01 18:08:59,151 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:09:06,027 INFO 127.0.0.1 - - [01/Jun/2021 18:09:06] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 18:09:10,602 INFO 127.0.0.1 - - [01/Jun/2021 18:09:10] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 18:09:15,429 INFO 127.0.0.1 - - [01/Jun/2021 18:09:15] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 18:09:22,047 INFO 127.0.0.1 - - [01/Jun/2021 18:09:22] "GET /clients/2 HTTP/1.1" 200 -
+2021-06-01 18:09:28,346 INFO 127.0.0.1 - - [01/Jun/2021 18:09:28] "GET /clients/7 HTTP/1.1" 200 -
+2021-06-01 18:09:32,106 INFO 127.0.0.1 - - [01/Jun/2021 18:09:32] "GET /clients/8 HTTP/1.1" 200 -
+2021-06-01 18:09:40,477 INFO 127.0.0.1 - - [01/Jun/2021 18:09:40] "[33mGET /clients/4 HTTP/1.1[0m" 404 -
+2021-06-01 18:11:39,280 INFO 127.0.0.1 - - [01/Jun/2021 18:11:39] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 18:51:15,872 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:51:24,004 INFO 127.0.0.1 - - [01/Jun/2021 18:51:24] "PUT /clients/999 HTTP/1.1" 200 -
+2021-06-01 18:53:35,113 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:53:37,981 INFO 127.0.0.1 - - [01/Jun/2021 18:53:37] "[33mPUT /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 18:53:44,622 INFO 127.0.0.1 - - [01/Jun/2021 18:53:44] "PUT /clients/1 HTTP/1.1" 200 -
+2021-06-01 18:53:49,153 INFO 127.0.0.1 - - [01/Jun/2021 18:53:49] "[33mPUT /clients/998 HTTP/1.1[0m" 404 -
+2021-06-01 18:53:54,287 INFO 127.0.0.1 - - [01/Jun/2021 18:53:54] "PUT /clients/1 HTTP/1.1" 200 -
+2021-06-01 18:58:36,065 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 18:58:48,626 INFO 127.0.0.1 - - [01/Jun/2021 18:58:48] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-01 18:59:34,951 INFO 127.0.0.1 - - [01/Jun/2021 18:59:34] "GET /clients HTTP/1.1" 200 -
+2021-06-01 18:59:50,852 INFO 127.0.0.1 - - [01/Jun/2021 18:59:50] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 18:59:56,732 INFO 127.0.0.1 - - [01/Jun/2021 18:59:56] "[33mGET /clients/4 HTTP/1.1[0m" 404 -
+2021-06-01 19:00:19,827 INFO 127.0.0.1 - - [01/Jun/2021 19:00:19] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 19:00:25,656 INFO 127.0.0.1 - - [01/Jun/2021 19:00:25] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:00:50,223 INFO 127.0.0.1 - - [01/Jun/2021 19:00:50] "PUT /clients/2 HTTP/1.1" 200 -
+2021-06-01 19:01:00,990 INFO 127.0.0.1 - - [01/Jun/2021 19:01:00] "PUT /clients/2 HTTP/1.1" 200 -
+2021-06-01 19:01:36,703 INFO 127.0.0.1 - - [01/Jun/2021 19:01:36] "[33mPUT /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:02:13,315 INFO 127.0.0.1 - - [01/Jun/2021 19:02:13] "[35m[1mDELETE /clients/22 HTTP/1.1[0m" 205 -
+2021-06-01 19:02:53,937 INFO 127.0.0.1 - - [01/Jun/2021 19:02:53] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:03:53,946 INFO 127.0.0.1 - - [01/Jun/2021 19:03:53] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 19:05:36,394 INFO 127.0.0.1 - - [01/Jun/2021 19:05:36] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 19:05:58,722 INFO 127.0.0.1 - - [01/Jun/2021 19:05:58] "GET /clients/999/accounts HTTP/1.1" 200 -
+2021-06-01 19:06:41,811 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 19:06:48,017 INFO 127.0.0.1 - - [01/Jun/2021 19:06:48] "GET /clients/999/accounts HTTP/1.1" 200 -
+2021-06-01 19:07:37,532 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 19:07:41,306 INFO 127.0.0.1 - - [01/Jun/2021 19:07:41] "[33mGET /clients/999/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:07:50,987 INFO 127.0.0.1 - - [01/Jun/2021 19:07:50] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 19:07:56,216 INFO 127.0.0.1 - - [01/Jun/2021 19:07:56] "[33mGET /clients/4/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:08:10,590 INFO 127.0.0.1 - - [01/Jun/2021 19:08:10] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:08:22,882 INFO 127.0.0.1 - - [01/Jun/2021 19:08:22] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 19:10:06,189 INFO 127.0.0.1 - - [01/Jun/2021 19:10:06] "GET /clients/999/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 19:13:10,098 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 19:13:14,400 INFO 127.0.0.1 - - [01/Jun/2021 19:13:14] "[33mGET /clients/999/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1[0m" 404 -
+2021-06-01 19:13:20,399 INFO 127.0.0.1 - - [01/Jun/2021 19:13:20] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 19:14:04,185 INFO 127.0.0.1 - - [01/Jun/2021 19:14:04] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 19:14:11,182 INFO 127.0.0.1 - - [01/Jun/2021 19:14:11] "[33mGET /clients/4/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:14:16,821 INFO 127.0.0.1 - - [01/Jun/2021 19:14:16] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:14:23,926 INFO 127.0.0.1 - - [01/Jun/2021 19:14:23] "GET /clients/2/accounts/2 HTTP/1.1" 200 -
+2021-06-01 19:14:29,471 INFO 127.0.0.1 - - [01/Jun/2021 19:14:29] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:15:47,094 INFO 127.0.0.1 - - [01/Jun/2021 19:15:47] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:16:30,550 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 19:16:32,864 INFO 127.0.0.1 - - [01/Jun/2021 19:16:32] "[33mGET /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:16:38,905 INFO 127.0.0.1 - - [01/Jun/2021 19:16:38] "[33mGET /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:37:19,042 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 19:38:14,720 INFO 127.0.0.1 - - [01/Jun/2021 19:38:14] "[35m[1mDELETE /clients/2/accounts/27 HTTP/1.1[0m" 205 -
+2021-06-01 19:38:21,059 INFO 127.0.0.1 - - [01/Jun/2021 19:38:21] "[33mDELETE /clients/2/accounts/27 HTTP/1.1[0m" 404 -
+2021-06-01 19:39:27,180 INFO 127.0.0.1 - - [01/Jun/2021 19:39:27] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-01 19:39:36,348 INFO 127.0.0.1 - - [01/Jun/2021 19:39:36] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 19:39:43,675 INFO 127.0.0.1 - - [01/Jun/2021 19:39:43] "[33mPOST /clients/999/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:39:53,997 INFO 127.0.0.1 - - [01/Jun/2021 19:39:53] "GET /clients HTTP/1.1" 200 -
+2021-06-01 19:40:02,939 INFO 127.0.0.1 - - [01/Jun/2021 19:40:02] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 19:40:06,482 INFO 127.0.0.1 - - [01/Jun/2021 19:40:06] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:40:19,649 INFO 127.0.0.1 - - [01/Jun/2021 19:40:19] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 19:40:28,863 INFO 127.0.0.1 - - [01/Jun/2021 19:40:28] "[33mGET /clients/4/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:40:44,737 INFO 127.0.0.1 - - [01/Jun/2021 19:40:44] "GET /clients/2/accounts/2 HTTP/1.1" 200 -
+2021-06-01 19:40:54,031 INFO 127.0.0.1 - - [01/Jun/2021 19:40:54] "GET /clients/2/accounts/2 HTTP/1.1" 200 -
+2021-06-01 19:41:04,429 INFO 127.0.0.1 - - [01/Jun/2021 19:41:04] "[33mGET /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:41:33,715 INFO 127.0.0.1 - - [01/Jun/2021 19:41:33] "[33mGET /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:42:19,221 INFO 127.0.0.1 - - [01/Jun/2021 19:42:19] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 19:42:23,453 INFO 127.0.0.1 - - [01/Jun/2021 19:42:23] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 19:42:28,828 INFO 127.0.0.1 - - [01/Jun/2021 19:42:28] "[33mGET /clients/999/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1[0m" 404 -
+2021-06-01 19:42:40,070 INFO 127.0.0.1 - - [01/Jun/2021 19:42:40] "PUT /clients/2 HTTP/1.1" 200 -
+2021-06-01 19:42:42,813 INFO 127.0.0.1 - - [01/Jun/2021 19:42:42] "[33mPUT /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:42:59,383 INFO 127.0.0.1 - - [01/Jun/2021 19:42:59] "[33mPUT /clients/2/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:43:05,576 INFO 127.0.0.1 - - [01/Jun/2021 19:43:05] "PUT /clients/2/accounts/4 HTTP/1.1" 200 -
+2021-06-01 19:43:15,842 INFO 127.0.0.1 - - [01/Jun/2021 19:43:15] "[33mPUT /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:43:23,316 INFO 127.0.0.1 - - [01/Jun/2021 19:43:23] "[33mPUT /clients/999/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:44:26,197 INFO 127.0.0.1 - - [01/Jun/2021 19:44:26] "PUT /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-06-01 19:44:29,173 INFO 127.0.0.1 - - [01/Jun/2021 19:44:29] "[33mPUT /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:44:32,346 INFO 127.0.0.1 - - [01/Jun/2021 19:44:32] "[33mPUT /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:44:45,241 INFO 127.0.0.1 - - [01/Jun/2021 19:44:45] "[33mPUT /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 19:44:56,063 INFO 127.0.0.1 - - [01/Jun/2021 19:44:56] "[33mPUT /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:46:35,404 INFO 127.0.0.1 - - [01/Jun/2021 19:46:35] "[35m[1mDELETE /clients/23 HTTP/1.1[0m" 205 -
+2021-06-01 19:46:55,814 INFO 127.0.0.1 - - [01/Jun/2021 19:46:55] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 19:47:18,053 INFO 127.0.0.1 - - [01/Jun/2021 19:47:18] "[35m[1mDELETE /clients/2/accounts/31 HTTP/1.1[0m" 205 -
+2021-06-01 19:47:30,404 INFO 127.0.0.1 - - [01/Jun/2021 19:47:30] "[33mDELETE /clients/2/accounts/15 HTTP/1.1[0m" 404 -
+2021-06-01 19:47:41,338 INFO 127.0.0.1 - - [01/Jun/2021 19:47:41] "[33mPOST /clients/999/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:47:46,082 INFO 127.0.0.1 - - [01/Jun/2021 19:47:46] "[33mPOST /clients/998/accounts HTTP/1.1[0m" 404 -
+2021-06-01 19:48:40,653 INFO 127.0.0.1 - - [01/Jun/2021 19:48:40] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 19:49:17,993 INFO 127.0.0.1 - - [01/Jun/2021 19:49:17] "[33mDELETE /clients/2/accounts/32 HTTP/1.1[0m" 404 -
+2021-06-01 19:49:32,864 INFO 127.0.0.1 - - [01/Jun/2021 19:49:32] "[35m[1mDELETE /clients/2/accounts/33 HTTP/1.1[0m" 205 -
+2021-06-01 19:49:40,618 INFO 127.0.0.1 - - [01/Jun/2021 19:49:40] "[35m[1mDELETE /clients/24 HTTP/1.1[0m" 205 -
+2021-06-01 20:04:29,946 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:05:19,171 INFO 127.0.0.1 - - [01/Jun/2021 20:05:19] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:06:39,077 INFO 127.0.0.1 - - [01/Jun/2021 20:06:39] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:06:53,494 INFO 127.0.0.1 - - [01/Jun/2021 20:06:53] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:07:36,176 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:07:43,897 INFO 127.0.0.1 - - [01/Jun/2021 20:07:43] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:08:07,213 INFO 127.0.0.1 - - [01/Jun/2021 20:08:07] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:08:14,398 INFO 127.0.0.1 - - [01/Jun/2021 20:08:14] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:08:16,975 INFO 127.0.0.1 - - [01/Jun/2021 20:08:16] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+2021-06-01 20:09:12,587 INFO 127.0.0.1 - - [01/Jun/2021 20:09:12] "[33mPATCH /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 20:09:41,912 INFO 127.0.0.1 - - [01/Jun/2021 20:09:41] "[33mPATCH /clients/1/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 20:09:57,560 INFO 127.0.0.1 - - [01/Jun/2021 20:09:57] "[33mPATCH /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 20:10:12,463 INFO 127.0.0.1 - - [01/Jun/2021 20:10:12] "[33mPATCH /clients/1/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 20:10:22,133 INFO 127.0.0.1 - - [01/Jun/2021 20:10:22] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:16:18,511 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:16:39,437 INFO 127.0.0.1 - - [01/Jun/2021 20:16:39] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:16:55,311 INFO 127.0.0.1 - - [01/Jun/2021 20:16:55] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:17:06,917 INFO 127.0.0.1 - - [01/Jun/2021 20:17:06] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:17:47,020 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:18:06,343 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:18:19,294 INFO 127.0.0.1 - - [01/Jun/2021 20:18:19] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 20:18:30,983 INFO 127.0.0.1 - - [01/Jun/2021 20:18:30] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:18:57,883 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:19:02,274 INFO 127.0.0.1 - - [01/Jun/2021 20:19:02] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:19:14,782 INFO 127.0.0.1 - - [01/Jun/2021 20:19:14] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:20:22,372 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 20:20:28,788 INFO 127.0.0.1 - - [01/Jun/2021 20:20:28] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:20:37,054 INFO 127.0.0.1 - - [01/Jun/2021 20:20:37] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:20:41,003 INFO 127.0.0.1 - - [01/Jun/2021 20:20:41] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:20:44,889 INFO 127.0.0.1 - - [01/Jun/2021 20:20:44] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:21:02,551 INFO 127.0.0.1 - - [01/Jun/2021 20:21:02] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 20:21:09,329 INFO 127.0.0.1 - - [01/Jun/2021 20:21:09] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 422 -
+2021-06-01 20:23:49,824 INFO 127.0.0.1 - - [01/Jun/2021 20:23:49] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 422 -
+2021-06-01 20:23:58,613 INFO 127.0.0.1 - - [01/Jun/2021 20:23:58] "[33mPATCH /clients/999/accounts/1/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 20:24:31,675 INFO 127.0.0.1 - - [01/Jun/2021 20:24:31] "[33mPATCH /clients/1/accounts/1/transfer/997 HTTP/1.1[0m" 404 -
+2021-06-01 20:24:35,483 INFO 127.0.0.1 - - [01/Jun/2021 20:24:35] "[33mPATCH /clients/1/accounts/998/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 20:24:53,975 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 21:05:41,056 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 21:22:20,268 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 21:22:24,191 INFO 127.0.0.1 - - [01/Jun/2021 21:22:24] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-01 21:22:38,847 INFO 127.0.0.1 - - [01/Jun/2021 21:22:38] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 21:22:51,004 INFO 127.0.0.1 - - [01/Jun/2021 21:22:51] "GET /clients HTTP/1.1" 200 -
+2021-06-01 21:22:57,830 INFO 127.0.0.1 - - [01/Jun/2021 21:22:57] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 21:23:09,041 INFO 127.0.0.1 - - [01/Jun/2021 21:23:09] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:23:19,059 INFO 127.0.0.1 - - [01/Jun/2021 21:23:19] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 21:23:38,185 INFO 127.0.0.1 - - [01/Jun/2021 21:23:38] "[33mGET /clients/4/accounts HTTP/1.1[0m" 404 -
+2021-06-01 21:23:46,703 INFO 127.0.0.1 - - [01/Jun/2021 21:23:46] "GET /clients/2/accounts/2 HTTP/1.1" 200 -
+2021-06-01 21:23:52,440 INFO 127.0.0.1 - - [01/Jun/2021 21:23:52] "[33mGET /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:23:57,892 INFO 127.0.0.1 - - [01/Jun/2021 21:23:57] "[33mGET /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:24:11,896 INFO 127.0.0.1 - - [01/Jun/2021 21:24:11] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 21:24:37,830 INFO 127.0.0.1 - - [01/Jun/2021 21:24:37] "[33mGET /clients/999/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1[0m" 404 -
+2021-06-01 21:24:54,842 INFO 127.0.0.1 - - [01/Jun/2021 21:24:54] "PUT /clients/2 HTTP/1.1" 200 -
+2021-06-01 21:25:06,610 INFO 127.0.0.1 - - [01/Jun/2021 21:25:06] "GET /clients HTTP/1.1" 200 -
+2021-06-01 21:25:14,721 INFO 127.0.0.1 - - [01/Jun/2021 21:25:14] "[33mPUT /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:25:21,687 INFO 127.0.0.1 - - [01/Jun/2021 21:25:21] "PUT /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-06-01 21:25:35,795 INFO 127.0.0.1 - - [01/Jun/2021 21:25:35] "GET /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-06-01 21:25:53,668 INFO 127.0.0.1 - - [01/Jun/2021 21:25:53] "[33mPUT /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:25:56,754 INFO 127.0.0.1 - - [01/Jun/2021 21:25:56] "[33mPUT /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:26:05,850 INFO 127.0.0.1 - - [01/Jun/2021 21:26:05] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 21:26:14,569 INFO 127.0.0.1 - - [01/Jun/2021 21:26:14] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+2021-06-01 21:26:20,372 INFO 127.0.0.1 - - [01/Jun/2021 21:26:20] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+2021-06-01 21:26:38,007 INFO 127.0.0.1 - - [01/Jun/2021 21:26:38] "[33mPATCH /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:26:42,110 INFO 127.0.0.1 - - [01/Jun/2021 21:26:42] "[33mPATCH /clients/1/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:26:56,809 INFO 127.0.0.1 - - [01/Jun/2021 21:26:56] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 21:27:35,072 INFO 127.0.0.1 - - [01/Jun/2021 21:27:35] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 21:27:53,351 INFO 127.0.0.1 - - [01/Jun/2021 21:27:53] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 422 -
+2021-06-01 21:27:57,277 INFO 127.0.0.1 - - [01/Jun/2021 21:27:57] "[33mPATCH /clients/999/accounts/1/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 21:28:00,573 INFO 127.0.0.1 - - [01/Jun/2021 21:28:00] "[33mPATCH /clients/1/accounts/998/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 21:28:13,369 INFO 127.0.0.1 - - [01/Jun/2021 21:28:13] "[35m[1mDELETE /clients/5 HTTP/1.1[0m" 205 -
+2021-06-01 21:28:17,174 INFO 127.0.0.1 - - [01/Jun/2021 21:28:17] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:28:39,724 INFO 127.0.0.1 - - [01/Jun/2021 21:28:39] "[33mDELETE /clients/2/accounts/5 HTTP/1.1[0m" 404 -
+2021-06-01 21:29:00,742 INFO 127.0.0.1 - - [01/Jun/2021 21:29:00] "[35m[1mDELETE /clients/2/accounts/4 HTTP/1.1[0m" 205 -
+2021-06-01 21:29:08,669 INFO 127.0.0.1 - - [01/Jun/2021 21:29:08] "[33mDELETE /clients/2/accounts/15 HTTP/1.1[0m" 404 -
+2021-06-01 21:29:19,661 INFO 127.0.0.1 - - [01/Jun/2021 21:29:19] "[33mPOST /clients/998/accounts HTTP/1.1[0m" 404 -
+2021-06-01 21:29:25,571 INFO 127.0.0.1 - - [01/Jun/2021 21:29:25] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -
+2021-06-01 21:35:46,914 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-01 21:36:58,327 INFO 127.0.0.1 - - [01/Jun/2021 21:36:58] "[35m[1mPOST /clients HTTP/1.1[0m" 201 -
+2021-06-01 21:37:00,207 INFO 127.0.0.1 - - [01/Jun/2021 21:37:00] "[35m[1mPOST /clients/1/accounts HTTP/1.1[0m" 201 -
+2021-06-01 21:37:01,917 INFO 127.0.0.1 - - [01/Jun/2021 21:37:01] "GET /clients HTTP/1.1" 200 -
+2021-06-01 21:37:03,637 INFO 127.0.0.1 - - [01/Jun/2021 21:37:03] "GET /clients/1 HTTP/1.1" 200 -
+2021-06-01 21:37:05,327 INFO 127.0.0.1 - - [01/Jun/2021 21:37:05] "[33mGET /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:07,067 INFO 127.0.0.1 - - [01/Jun/2021 21:37:07] "GET /clients/1/accounts HTTP/1.1" 200 -
+2021-06-01 21:37:08,748 INFO 127.0.0.1 - - [01/Jun/2021 21:37:08] "[33mGET /clients/4/accounts HTTP/1.1[0m" 404 -
+2021-06-01 21:37:10,508 INFO 127.0.0.1 - - [01/Jun/2021 21:37:10] "GET /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-06-01 21:37:12,213 INFO 127.0.0.1 - - [01/Jun/2021 21:37:12] "[33mGET /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:14,048 INFO 127.0.0.1 - - [01/Jun/2021 21:37:14] "[33mGET /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:15,768 INFO 127.0.0.1 - - [01/Jun/2021 21:37:15] "GET /clients/2/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1" 200 -
+2021-06-01 21:37:17,489 INFO 127.0.0.1 - - [01/Jun/2021 21:37:17] "[33mGET /clients/999/accounts?amountLessThan=950&amountGreaterThan=1050 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:19,269 INFO 127.0.0.1 - - [01/Jun/2021 21:37:19] "PUT /clients/2 HTTP/1.1" 200 -
+2021-06-01 21:37:21,029 INFO 127.0.0.1 - - [01/Jun/2021 21:37:21] "[33mPUT /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:22,834 INFO 127.0.0.1 - - [01/Jun/2021 21:37:22] "PUT /clients/2/accounts/3 HTTP/1.1" 200 -
+2021-06-01 21:37:24,584 INFO 127.0.0.1 - - [01/Jun/2021 21:37:24] "[33mPUT /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:26,269 INFO 127.0.0.1 - - [01/Jun/2021 21:37:26] "[33mPUT /clients/2/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:28,110 INFO 127.0.0.1 - - [01/Jun/2021 21:37:28] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 21:37:29,940 INFO 127.0.0.1 - - [01/Jun/2021 21:37:29] "[31m[1mPATCH /clients/1/accounts/1 HTTP/1.1[0m" 422 -
+2021-06-01 21:37:31,620 INFO 127.0.0.1 - - [01/Jun/2021 21:37:31] "[33mPATCH /clients/999/accounts/1 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:33,330 INFO 127.0.0.1 - - [01/Jun/2021 21:37:33] "[33mPATCH /clients/1/accounts/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:35,220 INFO 127.0.0.1 - - [01/Jun/2021 21:37:35] "PATCH /clients/1/accounts/1 HTTP/1.1" 200 -
+2021-06-01 21:37:37,241 INFO 127.0.0.1 - - [01/Jun/2021 21:37:37] "PATCH /clients/1/accounts/1/transfer/2 HTTP/1.1" 200 -
+2021-06-01 21:37:39,161 INFO 127.0.0.1 - - [01/Jun/2021 21:37:39] "[31m[1mPATCH /clients/1/accounts/1/transfer/2 HTTP/1.1[0m" 422 -
+2021-06-01 21:37:40,841 INFO 127.0.0.1 - - [01/Jun/2021 21:37:40] "[33mPATCH /clients/999/accounts/1/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:42,571 INFO 127.0.0.1 - - [01/Jun/2021 21:37:42] "[33mPATCH /clients/1/accounts/998/transfer/2 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:44,301 INFO 127.0.0.1 - - [01/Jun/2021 21:37:44] "[33mPATCH /clients/1/accounts/1/transfer/997 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:46,482 INFO 127.0.0.1 - - [01/Jun/2021 21:37:46] "[35m[1mDELETE /clients/5 HTTP/1.1[0m" 205 -
+2021-06-01 21:37:48,152 INFO 127.0.0.1 - - [01/Jun/2021 21:37:48] "[33mDELETE /clients/999 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:49,962 INFO 127.0.0.1 - - [01/Jun/2021 21:37:49] "[35m[1mDELETE /clients/2/accounts/4 HTTP/1.1[0m" 205 -
+2021-06-01 21:37:51,722 INFO 127.0.0.1 - - [01/Jun/2021 21:37:51] "[33mDELETE /clients/2/accounts/15 HTTP/1.1[0m" 404 -
+2021-06-01 21:37:53,462 INFO 127.0.0.1 - - [01/Jun/2021 21:37:53] "[33mPOST /clients/998/accounts HTTP/1.1[0m" 404 -
+2021-06-01 21:37:55,173 INFO 127.0.0.1 - - [01/Jun/2021 21:37:55] "[31m[1mDELETE /clients/1 HTTP/1.1[0m" 422 -

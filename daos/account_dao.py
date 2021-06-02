@@ -26,7 +26,7 @@ class AccountDAO(ABC):
         pass
 
     @abstractmethod
-    def add_remove_funds(self, client_id: int, account_id: int, change: int) -> Account:  # "Added funds to [Account name]."
+    def add_remove_funds(self, client_id: int, account_id: int, change: int) -> bool:  # "Added funds to [Account name]."
         pass
 
     @abstractmethod

@@ -4,11 +4,7 @@ import os
 
 
 
-#host='revdatabase1.clpplk5gj1yg.us-east-2.rds.amazonaws.com',
- #           database='postgres',
- #           user='mrussell481',
- #           password='nubnut2658',
- #           port='5432'
+
 
 
 def create_connection():
